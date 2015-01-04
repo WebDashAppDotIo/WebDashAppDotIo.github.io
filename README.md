@@ -6,6 +6,21 @@
 npm install browser-sync gulp gulp-less gulp-jade gulp-imagemin gulp-uglify --save-dev
 ```
 
+## Github-Pages auto-publication based on `master` commits
+
+[Create Github Page branch manually](https://help.github.com/articles/creating-project-pages-manually/),
+then set up your `.git/config` file this way:
+
+```
+[remote "origin"]
+    url = git@github.com:WebDashAppDotIo/Ionic-Showcase.git
+    fetch = +refs/heads/*:refs/remotes/origin/*
+    push = +refs/heads/master:refs/heads/gh-pages
+    push = +refs/heads/master:refs/heads/master
+```
+
+Then `git push` will keep `gh-pages` branch mirrored on `master`.
+
 
 ## Theme
 
