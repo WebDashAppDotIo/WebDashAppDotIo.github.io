@@ -21,6 +21,9 @@ then set up your `.git/config` file this way:
 
 Then `git push` will keep `gh-pages` branch mirrored on `master`.
 
+## Github Pages hosted apex domain
+
+- [Configuring an A record with your DNS provider](https://help.github.com/articles/tips-for-configuring-an-a-record-with-your-dns-provider)
 
 ## Theme
 
