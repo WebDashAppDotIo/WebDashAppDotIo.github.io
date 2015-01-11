@@ -1,4 +1,5 @@
-doctype html(lang='en')
+doctype html
+html(lang='#{lang}')
 head
     meta(charset='utf-8')
     |     
@@ -6,11 +7,11 @@ head
     |     
     meta(name='viewport', content='width=device-width, initial-scale=1')
     |     
-    meta(name='description', content='Web-app.io: Site web et application smartphone &agrave; faible co&ucirc;t - Nantes (France)')
+    meta(name='description', content='#{baseline} - #{city} (#{country})')
     |     
-    meta(name='author', content='web-app.io')
+    meta(name='author', content='#{domain}')
     |     
-    title Site web et application smartphone &agrave; faible co&ucirc;t - Nantes (France)
+    title #{baseline} - #{city} (#{country})
     // Bootstrap Core CSS
     link(href='css/bootstrap.min.css', rel='stylesheet')
     // Custom CSS
@@ -40,18 +41,18 @@ head
             |                     
             span.icon-bar
           |                 
-          a.navbar-brand.topnav(href='http://web-app.io') Site web et application smartphone &agrave; faible co&ucirc;t - Nantes (France)
+          a.navbar-brand.topnav(href='http://' + domain) #{baseline} - #{city} (#{country})
         // Collect the nav links, forms, and other content for toggling
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav.navbar-right
             li
-              a(href='http://web-app.io#a-propos') A propos
+              a(href='http://' + domain + '#a-propos') A propos
             |                     
             li
-              a(href='http://web-app.icon-bar#services') Services
+              a(href='http://' + domain + '#services') Services
             |                     
             li
-              a(href='http://web-app.io#contact') Contact
+              a(href='http://' + domain + '#contact') Contact
         // /.navbar-collapse
       // /.container
     // Header
@@ -74,7 +75,7 @@ head
                   <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
                   </li>
                 li
-                  a.btn.btn-default.btn-lg(href='mailto:contact@web-app.io')
+                  a.btn.btn-default.btn-lg(href='mailto:contact@' + domain)
                     i.fa.fa-envelope-o.fa-fw
                     |  
                     span.network-name E-mail
@@ -115,7 +116,8 @@ head
               | imagin&eacute;s pour votre business.
             |                     
             p.lead
-              | Mon engagement de service :
+              | Je suis développeur web depuis 15 ans, directeur technique en agence web.
+              | Mon engagement de service en tant que <i>freelance</i> :
               | Ecoute, propositions, ma&icirc;trise des co&ucirc;ts.
           |                 
           .col-lg-5.col-lg-offset-2.col-sm-6
@@ -179,7 +181,7 @@ head
           .col-lg-6
             ul.list-inline.banner-social-buttons
               li
-                a.btn.btn-default.btn-lg(href='mailto:contact@web-app.io')
+                a.btn.btn-default.btn-lg(href='mailto:contact@' + domain)
                   i.fa.fa-envelope-o.fa-fw
                   |  
                   span.network-name E-mail
@@ -204,26 +206,26 @@ head
           .col-lg-12
             ul.list-inline
               li
-                a(href='http://web-app.io') Application et Site internet &agrave; votre budget
+                a(href='http://' + domain) #{baseline} - #{city} (#{country})
               |                         
               li.footer-menu-divider &sdot;
               |                         
               li
-                a(href='http://web-app.io#a-propos') A propos
+                a(href='http://' + domain + '#a-propos') A propos
               |                         
               li.footer-menu-divider &sdot;
               |                         
               li
-                a(href='http://web-app.io#services') Services
+                a(href='http://' + domain + '#services') Services
               |                         
               li.footer-menu-divider &sdot;
               |                         
               li
-                a(href='http://web-app.io#contact') Contact
+                a(href='http://' + domain + '#contact') Contact
             |                     
             p.copyright.text-muted.small
               | Copyright &copy; 2015 - 
-              a(href='http://web-app.io') Web-apps.io
+              a(href='http://' + domain) Web-apps.io
               |  - Contenu en licence libre 
               a(href='http://creativecommons.org/licenses/by-sa/3.0/')  Creative Commons by-sa
               | .

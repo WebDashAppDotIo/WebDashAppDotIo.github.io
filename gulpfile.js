@@ -4,7 +4,6 @@ var gulp =          require('gulp'),
     jade =          require('gulp-jade'),
     imagemin =      require('gulp-imagemin'),
     uglify =        require('gulp-uglify'),
-    LOCALS =        {},
     DIST =          './'
     ;
 
@@ -32,12 +31,16 @@ gulp.task('less', function() {
  * Jade task
  */
 gulp.task('templates', function() {
-    var YOUR_LOCALS = {};
+    var texts = {
+        'lang': "fr",
+        'domain': "web-app.io", //'localhost:3000',
+        'baseline' : "Application iOS / Android, Site Web, Extranet - Freelance & budget réduit",
+        'city': "Nantes",
+        'country': "France"
+    };
 
     gulp.src('jades/*.jade')
-    .pipe(jade({
-        locals: LOCALS
-    }))
+    .pipe(jade({data: texts}))
     .pipe(gulp.dest(DIST))
 });
 
