@@ -34,7 +34,7 @@ gulp.task('templates', function() {
     var texts = {
         'lang': "fr",
         'domain': "web-app.io", //'localhost:3000',
-        'baseline' : "Application iOS / Android, Site Web, Extranet - Freelance & budget réduit",
+        'baseline' : "Apps iOS / Android - Sites webs - Freelance",
         'city': "Nantes",
         'country': "France"
     };
@@ -104,7 +104,7 @@ gulp.task('default', [
     'watch'
 ]);
 
-gulp.task('no-watch', [
+gulp.task('build', [
     'fonts',
     'vendors',
     'imagemin',

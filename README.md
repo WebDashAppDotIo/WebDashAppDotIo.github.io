@@ -1,9 +1,17 @@
-
+# [Web-App.io](http://web-app.io)
 
 ## SDK: [Glup + Browserify](http://www.browsersync.io/docs/gulp/)
 
+### Install:
+
 ```bash
 npm install browser-sync gulp gulp-less gulp-jade gulp-imagemin gulp-uglify --save-dev
+```
+
+### Build:
+
+```bash
+gulp build
 ```
 
 ## Github-Pages auto-publication based on `master` commits
