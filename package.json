@@ -1,0 +1,38 @@
+{
+  "name": "web-app.io",
+  "version": "1.0.0",
+  "description": "Web-app.io builder",
+  "main": "data.js",
+  "dependencies": {
+    "browser-sync": "^1.8.3",
+    "gulp": "^3.8.10",
+    "chalk": "^1.0.0",
+    "gulp-imagemin": "^2.1.0",
+    "gulp-jade": "^0.10.0",
+    "gulp-jshint": "^1.9.2",
+    "gulp-less": "^2.0.1",
+    "gulp-load-plugins": "^0.8.1",
+    "gulp-uglify": "^1.0.2",
+    "jshint-stylish": "^1.0.1"
+  },
+  "devDependencies": {
+    "gulp-minify-css": "^0.5.1",
+    "gulp-size": "^1.2.1",
+    "gulp-sourcemaps": "^1.5.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WebDashAppDotIo/WebDashAppDotIo.github.io.git"
+  },
+  "author": "Ronan Guilloux <ronan.guilloux@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WebDashAppDotIo/WebDashAppDotIo.github.io/issues"
+  },
+  "homepage": "https://github.com/WebDashAppDotIo/WebDashAppDotIo.github.io"
+}
